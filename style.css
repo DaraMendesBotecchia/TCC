@@ -1,0 +1,230 @@
+/* Estilos para o layout geral */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+  
+  header {
+  background-color: #6D4C41;
+  color: #FFF;
+  padding: 20px;
+  }
+  
+  nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  nav li {
+  display: inline-block;
+  margin-right: 20px;
+  float: right;
+  }
+  
+  nav a {
+  color: #FFF;
+  text-decoration: none;
+  }
+  
+  main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  }
+  
+  .banner {
+  background-image: url("https://via.placeholder.com/800x400");
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+  padding: 50px;
+  text-align: center;
+  }
+  
+  .banner h2 {
+  font-size: 36px;
+  margin: 0;
+  }
+  
+  .banner p {
+  font-size: 18px;
+  margin: 20px 0;
+  }
+  
+  .button {
+  background-color: #FFF;
+  border: none;
+  color: #6D4C41;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  }
+  
+  .button:hover {
+  background-color: #6D4C41;
+  color: #FFF;
+  }
+  
+  .produtos {
+  margin-top: 50px;
+  }
+  
+  .produtos h2 {
+  font-size: 24px;
+  margin: 0;
+  }
+  
+  .produtos ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .produtos li {
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;
+  width: 250px;
+  }
+  
+  .produtos img {
+  display: block;
+  margin: 0 auto;
+  }
+  
+  .produtos h3 {
+  font-size: 18px;
+  margin: 10px 0 0 0;
+  }
+  
+  .produtos p {
+  font-size: 14px;
+  margin: 10px 0;
+  }
+  
+  .preco {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  
+  .sobre {
+  margin-top: 50px;
+  }
+  
+  .sobre h2 {
+  font-size: 24px;
+  margin: 0;
+  }
+  
+  .sobre p {
+  font-size: 14px;
+  margin: 10px 0;
+  }
+  
+  .contato {
+  margin-top: 50px;
+  }
+  
+  .contato h2 {
+  font-size: 24px;
+  margin: 0;
+  }
+  
+  form label {
+  display: block;
+  font-size: 14px;
+  margin-top: 20px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+  border: none;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  }
+  
+  form input[type="submit"] {
+  background-color: #6D4C41;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  }
+  
+  form input[type="submit"]:hover {
+  background-color: #FFF;
+  color: #6D4C41;
+  }
+  
+  /* Define o estilo da seção "carrinho" */
+.carrinho {
+	background-color: #f8f8f8; /* Define a cor de fundo da seção */
+	border: 1px solid #ccc; /* Define uma borda sólida de 1 pixel com cor #ccc */
+	padding: 20px; /* Define um espaçamento interno de 20 pixels */
+	margin-top: 50px; /* Define uma margem superior de 50 pixels */
+}
+
+/* Define o estilo do título da seção "carrinho" */
+.carrinho h2 {
+	font-size: 24px; /* Define o tamanho da fonte do título como 24 pixels */
+	margin-bottom: 10px; /* Define uma margem inferior de 10 pixels para o título */
+}
+
+/* Define o estilo da lista de produtos na seção "carrinho" */
+.carrinho ul {
+	list-style-type: none; /* Remove a marcação de lista padrão */
+	padding: 0; /* Remove o espaçamento interno da lista */
+	margin: 0; /* Remove as margens da lista */
+}
+
+/* Define o estilo de cada item da lista de produtos */
+.carrinho li {
+	display: flex; /* Define o layout flexível para permitir o alinhamento vertical */
+	align-items: center; /* Define o alinhamento vertical dos elementos como centralizado */
+	justify-content: space-between; /* Define o alinhamento horizontal dos elementos como distribuído */
+	margin-bottom: 10px; /* Define uma margem inferior de 10 pixels para cada item */
+	padding: 10px; /* Define um espaçamento interno de 10 pixels para cada item */
+	border: 1px solid #ccc; /* Define uma borda sólida de 1 pixel com cor #ccc para cada item */
+}
+
+/* Define o estilo da imagem do produto */
+.carrinho li img {
+	margin-right: 10px; /* Define uma margem à direita de 10 pixels para a imagem do produto */
+}
+
+/* Define o estilo do preço do produto */
+.carrinho li .preco {
+	font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+/* Define o estilo do total da seção "carrinho" */
+.carrinho .total {
+	display: flex; /* Define o layout flexível para permitir o alinhamento vertical */
+	align-items: center; /* Define o alinhamento vertical dos elementos como centralizado */
+	justify-content: space-between; /* Define o alinhamento horizontal dos elementos como distribuído */
+	margin-top: 20px; /* Define uma margem superior de 20 pixels */
+	font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
+}
+
+.logo-navbar {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+
