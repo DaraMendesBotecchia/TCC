@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Loja</title>
+    <style>
+        /* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 30px;
+}
+
+li {
+    width: 300px;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+li:hover {
+    transform: translateY(-5px);
+}
+
+li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+li h3 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+li p {
+    margin: 10px;
+    color: #666;
+}
+
+li span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f00;
+    margin: 10px;
+}
+
+li button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    background-color: #f00;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #c00;
+}
+/* estilo da navbar */
+nav {
+        background-color: #6D4C41;
+        overflow: hidden;
+      }
+      nav a {
+        color: #fff;
+        float: left;
+        font-size: 18px;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color:#F7D599;
+        color: #333;
+      }
+
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <a href="teste.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="login.html">Login</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    <h1>Minha Loja</h1>
+
+    <h2>Nossos produtos</h2>
+
+    <ul>
+        <li>
+            <img src="https://uploads.metropoles.com/wp-content/uploads/2019/02/28172451/queijo-.jpg" alt="Produto 1">
+            <h3>Produto 1</h3>
+            <p>Descrição do Produto 1</p>
+            <span>R$ 20,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://img.itdg.com.br/tdg/images/blog/uploads/2018/10/tipos-de-farinha-de-trigo-veja.jpg?w=1200" alt="Produto 2">
+            <h3>Produto 2</h3>
+            <p>Descrição do Produto 2</p>
+            <span>R$ 30,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://cdn0.tudoreceitas.com/pt/posts/1/5/7/geleia_de_amora_facil_4751_600.jpg" alt="Produto 3">
+            <h3>Produto 3</h3>
+            <p>Descrição do Produto 3</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://img.itdg.com.br/tdg/images/blog/uploads/2017/04/shutterstock_577601638.jpg" alt="Produto 4">
+            <h3>Produto 4</h3>
+            <p>Descrição do Produto 4</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://www.deliverymineiro.com.br/wp-content/uploads/2021/08/7-melhores-produtos-da-roca-para-revenda_00001.jpg" alt="Produto 5">
+            <h3>Produto 5</h3>
+            <p>Descrição do Produto 5</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://img.cybercook.com.br/receitas/593/pao-caseiro-16.jpeg" alt="Produto 6">
+            <h3>Produto 6</h3>
+            <p>Descrição do Produto 6</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://img.itdg.com.br/tdg/images/recipes/000/154/445/325723/325723_original.jpg?mode=crop&width=710&height=400" alt="Produto 7">
+            <h3>Produto 7</h3>
+            <p>Descrição do Produto 7</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://images.fazendinha.me/production/produtor/528/produtos/4716/laticinios-moedense-doce-de-leite-moedense-pote-500g-1660131516.jpg" alt="Produto 8">
+            <h3>Produto 8</h3>
+            <p>Descrição do Produto 8</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://www.montanhascapixabas.com.br/wp-content/uploads/2019/09/Produtos_da_roca_e_organicos_a_partir_de_R_5_na_Praca_do_Papa4.jpeg" alt="Produto 9">
+            <h3>Produto 9</h3>
+            <p>Descrição do Produto 9</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://t00987.vtexassets.com/arquivos/ids/159664/Frente.jpg?v=637765571508000000" alt="Produto 10">
+            <h3>Produto 10</h3>
+            <p>Descrição do Produto 10</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://www.pinheiroplantas.com.br/upload/images/produtos/g/saputi.jpg" alt="Produto 11">
+            <h3>Produto 11</h3>
+            <p>Descrição do Produto 11</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://nutritotal.com.br/publico-geral/wp-content/uploads/2020/02/shutterstock_385801849.jpg" alt="Produto 12">
+            <h3>Produto 12</h3>
+            <p>Descrição do Produto 12</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://melepimenta.com/wp-content/uploads/2018/09/Doce-de-banana-com-chocolate-Baixa-4.jpg" alt="Produto 13">
+            <h3>Produto 13</h3>
+            <p>Descrição do Produto 13</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://s.cornershopapp.com/product-images/2462315.jpg?versionId=R_T9_O1q5e2M2ohxwtl5k_.V7AwKKWO3" alt="Produto 14">
+            <h3>Produto 14</h3>
+            <p>Descrição do Produto 14</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://saberhortifruti.com.br/wp-content/uploads/2018/10/Cebolinha.jpg" alt="Produto 15">
+            <h3>Produto 15</h3>
+            <p>Descrição do Produto 15</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://www.dicasdemulher.com.br/wp-content/uploads/2018/02/coentro-5.jpg" alt="Produto 16">
+            <h3>Produto 16</h3>
+            <p>Descrição do Produto 16</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://shoppingdostemperos.com.br/wp-content/uploads/2019/08/D_NQ_NP_976498-MLB26565140359_122017-O.jpeg" alt="Produto 17">
+            <h3>Produto 17</h3>
+            <p>Descrição do Produto 17</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://espetinhodesucesso.com.br/wp-content/uploads/2022/05/carne-de-porco-para-churrasco.jpg" alt="Produto 18">
+            <h3>Produto 18</h3>
+            <p>Descrição do Produto 18</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://www.comidaereceitas.com.br/wp-content/uploads/2008/10/suco-de-jabuticaba-freepik.jpg" alt="Produto 19">
+            <h3>Produto 19</h3>
+            <p>Descrição do Produto 19</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+        <li>
+            <img src="https://conteudo.imguol.com.br/c/entretenimento/5b/2019/09/12/caldo-de-cana-de-acucar-1568309899896_v2_1x1.jpg" alt="Produto 20">
+            <h3>Produto 20</h3>
+            <p>Descrição do Produto 20</p>
+            <span>R$ 40,00</span>
+            <button>Adicionar ao Carrinho</button>
+        </li>
+    </ul>
+
+    <script src="carrinho.js"></script>
+</body>
+</html>
