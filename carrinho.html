@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Carrinho de compras</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+        
+        h1 {
+          text-align: center;
+          margin-top: 20px;
+        }
+        
+        table {
+          border-collapse: collapse;
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        
+        th, td {
+          border: 1px solid #ddd;
+          padding: 10px;
+          text-align: left;
+        }
+        
+        th {
+          background-color: #f2f2f2;
+        }
+        
+        tfoot tr td {
+          text-align: right;
+          font-weight: bold;
+        }
+        
+        button {
+          display: block;
+          margin: 0 auto;
+          padding: 10px;
+          border: none;
+          background-color: #007bff;
+          color: #fff;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        
+        button:hover {
+          background-color: #0062cc;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Carrinho de compras</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Quantidade</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Camiseta</td>
+          <td>R$ 29,90</td>
+          <td>2</td>
+          <td>R$ 59,80</td>
+        </tr>
+        <tr>
+          <td>Calça jeans</td>
+          <td>R$ 79,90</td>
+          <td>1</td>
+          <td>R$ 79,90</td>
+        </tr>
+        <tr>
+          <td>Sapato social</td>
+          <td>R$ 99,90</td>
+          <td>1</td>
+          <td>R$ 99,90</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total</td>
+          <td>R$ 239,60</td>
+        </tr>
+      </tfoot>
+    </table>
+    <button>Finalizar compra</button>
+  </body>
+</html>
