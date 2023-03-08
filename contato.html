@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contato - Loja XYZ</title>
+    <style>
+      /* estilo da navbar */
+      nav {
+        background-color: #6D4C41;
+        overflow: hidden;
+      }
+      nav a {
+        color: #fff;
+        float: left;
+        font-size: 18px;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #F7D599;
+        color: #333;
+      }
+
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+      }
+
+      .contato {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #ccc;
+        padding: 20px;
+        max-width: 500px;
+      }
+
+      h1 {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 0;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px 20px;
+        margin-top: 10px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      .error {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+        <a href="teste.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="login.html">Login</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+    <main>
+      <div class="contato">
+        <h1>Entre em contato conosco</h1>
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Loja Online - Telefone: (27) 99643-1945 - E-mail: saboresdaterra240@gmail.com</p>
+    </footer>
+  </body>
+</html>
