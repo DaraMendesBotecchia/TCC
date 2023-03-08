@@ -1,0 +1,86 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sabores da terra</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="carrinho.js">  </script>
+    
+</head>
+<body>
+	<header>
+		<img src="https://i.ytimg.com/vi/4z_32jbHM7c/sddefault.jpg" alt="Logo da Sabores da terra" class="logo-navbar">
+		<h1>Sabores da terra</h1>
+		<nav>
+            <ul>
+				
+				<li><a href="contato.html">Contato</a></li>
+				<li><a href="produtos.html">Produtos</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="sobre.html">Sobre Nós</a></li>
+				<li><a href="teste.html">Início</a></li>
+
+            </ul>
+            <div class="carrinho-navbar">
+                <a href="carrinho.html" class="carrinho-icon">
+                    <img src="carrinho.png" alt="Carrinho de compras">
+                    <span class="carrinho-count">0</span>
+                </a>
+            </div>
+            
+            </div>
+        </nav>
+        
+	</header>
+
+	<main>
+
+		<section class="banner">
+			<h2>Bem-vindo à nossa loja!</h2>
+			<p>Produtos frescos e deliciosos direto da roça para a sua mesa.</p>
+			<a href="produtos.html" class="button">Ver Produtos</a>
+		</section>
+
+		<section class="produtos">
+			<h2>Nossos Produtos</h2>
+			<ul>
+				<li>
+					<img src="https://via.placeholder.com/150x150" alt="Produto 1">
+					<h3>Produto 1</h3>
+					<p>Descrição do produto 1.</p>
+					<span class="preco">R$ 10,00</span>
+                    <a href="carrinho.html" class="button">Adicionar ao carrinho</a>
+					<label for="quantidade-produto-1">Quantidade:</label>
+					<input type="number" id="quantidade-produto-1" name="quantidade" min="1" value="1">
+
+					<a href="carrinho.html" class="button">Comprar</a>
+				</li>
+				<li>
+					<img src="https://via.placeholder.com/150x150" alt="Produto 2">
+					<h3>Produto 2</h3>
+					<p>Descrição do produto 2.</p>
+					<span class="preco">R$ 15,00</span>
+                    <a href="carrinho.html" class="button">Adicionar ao carrinho</a>
+					<a href="carrinho.html" class="button">Comprar</a>
+				</li>
+				<li>
+					<img src="https://via.placeholder.com/150x150" alt="Produto 3">
+					<h3>Produto 3</h3>
+					<p>Descrição do produto 3.</p>
+					<span class="preco">R$ 20,00</span>
+                    <a href="carrinho.html" class="button">Adicionar ao carrinho</a>
+					<a href="carrinho.html" class="button">Comprar</a>
+				</li>
+			</ul>
+		</section>
+        <a href="#" class="button" onclick="adicionarAoCarrinho(event)">Adicionar ao carrinho</a>
+
+
+	</main>
+
+	<footer>
+		<p>Loja de Produtos da Roça &
+
+copy; 2023 Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
