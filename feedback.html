@@ -84,9 +84,49 @@
 			margin-top: 20px;
 			text-align: center;
 		}
+
+
+       /* estilo da navbar */
+      nav {
+        background-color: #6D4C41;
+        overflow: hidden;
+      }
+      nav a {
+        color: #fff;
+        float: left;
+        font-size: 18px;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color:#F7D599;
+        color: #333;
+      }
+
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+
+
+
 	</style>
 </head>
 <body>
+
+     <!-- navbar -->
+     <nav>
+        <a href="teste.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="login.html">Login</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+        <li><a href="feedback.html">Feedbacks</a></li>
+      </nav>
     
 	<h1>Adicionar Feedback</h1>
 	<form action="adicionar_feedback.php" method="POST">
@@ -151,4 +191,3 @@
         });
     </script>
 </    
-		
