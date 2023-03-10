@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adicionar Feedback</title>
+	<style>
+		body {
+			background-color: #f1f1f1;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		form {
+			margin: 0 auto;
+			width: 50%;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		input[type="text"], textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			resize: vertical;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+
+		/* Estilo para os labels que possuem asterisco para indicar que são campos obrigatórios */
+		.required:after {
+			content: "*";
+			color: red;
+			margin-left: 5px;
+		}
+
+		/* Estilo para um título do formulário */
+		.form-title {
+			text-align: center;
+			margin-bottom: 30px;
+			font-size: 1.5em;
+		}
+
+		/* Estilo para uma mensagem de sucesso ao enviar o feedback */
+		.success-message {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border-radius: 4px;
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		/* Estilo para uma mensagem de erro ao enviar o feedback */
+		.error-message {
+			background-color: #f44336;
+			color: #fff;
+			padding: 10px;
+			border-radius: 4px;
+			margin-top: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+    
+	<h1>Adicionar Feedback</h1>
+	<form action="adicionar_feedback.php" method="POST">
+		<div class="form-title">Deixe o seu feedback sobre o nosso produto</div>
+
+		<label for="produto" class="required">Produto:</label>
+		<input type="text" name="produto" required>
+		
+		<label for="feedback" class="required">Feedback:</label>
+		<textarea name="feedback" required></textarea>
+
+		<label for="nome">Nome:</label>
+		<input type="text" name="nome">
+		
+		<label for="email">E-mail:</label>
+		<input type="email" name="email">
+		
+		<label for="telefone">Telefone:</label>
+		<input type="tel" name="telefone">
+		
+		<input type="submit" value="Enviar">
+
+		<!-- Mensagem de sucesso ao enviar o feedback -->
+		<div class="success-message" style="display: none;">Feedback enviado com sucesso!</div>
+        <!-- Mensagem de erro ao enviar o feedback -->
+        <div class="error-message" style="display: none;">Erro ao enviar o feedback. Por favor, tente novamente mais tarde.</div>
+    </form>
+    <script>
+        // Selecionando o formulário e os elementos da mensagem de sucesso e de erro
+        const form = document.querySelector('form');
+        const successMessage = document.querySelector('.success-message');
+        const errorMessage = document.querySelector('.error-message');
+    
+        // Adicionando um evento de submit ao formulário
+        form.addEventListener('submit', (event) => {
+            // Prevenindo o comportamento padrão do submit, que é atualizar a página
+            event.preventDefault();
+    
+            // Criando um objeto FormData a partir dos campos do formulário
+            const formData = new FormData(form);
+    
+            // Enviando o formulário via AJAX com o método POST
+            fetch('adicionar_feedback.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                // Verificando se a resposta da requisição foi bem-sucedida
+                if (response.ok) {
+                    // Exibindo a mensagem de sucesso e limpando o formulário
+                    successMessage.style.display = 'block';
+                    form.reset();
+                } else {
+                    // Exibindo a mensagem de erro
+                    errorMessage.style.display = 'block';
+                }
+            })
+            .catch(error => {
+                // Exibindo a mensagem de erro
+                errorMessage.style.display = 'block';
+            });
+        });
+    </script>
+</    
+		
